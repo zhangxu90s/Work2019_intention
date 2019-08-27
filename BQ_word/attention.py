@@ -7,7 +7,20 @@ from keras.layers import concatenate
 import tensorflow as tf
 from keras import initializers, regularizers, constraints
 
-
+def sen_product(x, kernel):
+    """
+    https://github.com/richliao/textClassifier/issues/13#issuecomment-377323318
+    Wrapper for dot product operation, in order to be compatible with both
+    Theano and Tensorflow
+    Args:
+        x (): input
+        kernel (): weights
+    Returns:
+    """
+    if K.backend() == 'tensorflow':
+        return K.squeeze(K.dot(x, K.expand_dims(kernel)), axis=-1)
+    else:
+        return K.dot(x, kernel)
 class AttentionWithContext(Layer):
     """
     Attention operation, with a context/query vector, for temporal data.
