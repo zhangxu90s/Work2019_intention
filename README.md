@@ -1,4 +1,4 @@
-# HEM
+# Intention
 This repo contains the implementation of "A deep neural architecture for sentence semantic matching" in Keras & Tensorflow.
 # Usage for python code
 ## 0. Requirement
