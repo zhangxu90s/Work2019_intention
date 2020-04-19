@@ -11,19 +11,16 @@ keras==2.2.4
 gensim==3.0.0
 ## 1. Data preparation
 The dataset is BQ.  
-@inproceedings{chen-etal-2018-bq,  
-    title = "The BQ Corpus: A Large-scale Domain-specific Chinese Corpus For Sentence Semantic Equivalence Identification",  
-    author = "Chen, Jing  and
-      Chen, Qingcai  and
-      Liu, Xin  and
-      Yang, Haijun  and
-      Lu, Daohe  and
-      Tang, Buzhou",  
-    booktitle = "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",  
-    year = "2018",  
-    publisher = "Association for Computational Linguistics",  
-    doi = "10.18653/v1/D18-1536",  
-    pages = "4946--4951",  
-}  
+"The BQ Corpus: A Large-scale Domain-specific Chinese Corpus For Sentence Semantic Equivalence Identification", https://www.aclweb.org/anthology/D18-1536/.
 ## 2. Start the training process
 python siamese_NN_improved_loss_match.py  
+# Reference
+
+If you find our source is useful, please consider citing our work.
+
+@article{zhang2020adeep,\
+title={A Deep Neural Architecture for Sentence Semantic Matching},\
+author={Xu Zhang, Wenpeng Lu, Fangfang Li, Ruoyu Zhang, Jinyong Cheng},\
+journal={International Journal of Computational Science and Engineering},\
+year={2020},\
+}
