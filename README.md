@@ -16,7 +16,7 @@ The dataset is BQ.
 python siamese_NN_improved_loss_match.py  
 # Reference
 
-If you find our source is useful, please consider citing our work.
+If you find our source useful, please consider citing our work.
 
 @article{zhang2020adeep,\
 title={A Deep Neural Architecture for Sentence Semantic Matching},\
